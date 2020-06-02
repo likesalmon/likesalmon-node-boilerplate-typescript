@@ -1,41 +1,41 @@
 {
-  "name": "likesalmon-node-boilerplate",
-  "version": "1.0.0",
-  "description": "Starter for bare-bones NodeJS projects.",
-  "main": "index.js",
-  "engines": {
-    "node": ">=12"
-  },
-  "scripts": {
-    "build": "parcel build --target=node index.ts",
-    "start": "npm run build && node -r dotenv/config dist/index.js | jq '.'",
-    "generate": "plop",
-    "test": "jest --watch --runInBand",
-    "test:once": "jest"
-  },
-  "author": "Ammon Morris <ammon.morris@soul-cycle.com>",
-  "license": "UNLICENSED",
-  "devDependencies": {
-    "@types/jest": "^25.2.1",
-    "@types/node": "^13.11.1",
-    "@types/ramda": "^0.27.3",
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb-base": "^13.2.0",
-    "eslint-config-prettier": "^6.6.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-prettier": "^3.1.1",
-    "jest": "^25.3.0",
-    "plop": "^2.6.0",
-    "prettier": "^1.19.1",
-    "prettier-eslint": "^9.0.1",
-    "prettier-eslint-cli": "^5.0.0",
-    "ts-jest": "^25.4.0",
-    "typescript": "^3.8.3"
-  },
-  "dependencies": {
-    "dotenv": "^8.2.0",
-    "npm": "^6.14.4",
-    "ramda": "^0.27.0",
-    "winston": "^3.2.1"
-  }
+    "name": "likesalmon-node-boilerplate",
+    "version": "1.0.0",
+    "description": "Starter for bare-bones NodeJS projects.",
+    "main": "index.js",
+    "engines": {
+        "node": ">=12"
+    },
+    "scripts": {
+        "build": "parcel build --target=node index.ts",
+        "start": "npm run build && node -r dotenv/config dist/index.js | jq '.'",
+        "generate": "plop",
+        "test": "jest --watch --runInBand",
+        "test:once": "jest"
+    },
+    "author": "Ammon Morris <likesalmon@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/jest": "^25.2.1",
+        "@types/node": "^13.11.1",
+        "@types/ramda": "^0.27.3",
+        "eslint": "^5.16.0",
+        "eslint-config-airbnb-base": "^13.2.0",
+        "eslint-config-prettier": "^6.6.0",
+        "eslint-plugin-import": "^2.18.2",
+        "eslint-plugin-prettier": "^3.1.1",
+        "jest": "^25.3.0",
+        "plop": "^2.6.0",
+        "prettier": "^1.19.1",
+        "prettier-eslint": "^9.0.1",
+        "prettier-eslint-cli": "^5.0.0",
+        "ts-jest": "^25.4.0",
+        "typescript": "^3.8.3"
+    },
+    "dependencies": {
+        "dotenv": "^8.2.0",
+        "npm": "^6.14.4",
+        "ramda": "^0.27.0",
+        "winston": "^3.2.1"
+    }
 }
