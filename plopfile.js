@@ -12,12 +12,12 @@ module.exports = (plop) => {
     actions: [
       {
         type: "add",
-        path: "src/{{moduleName}}.ts",
+        path: "src/{{ kebabCase moduleName }}.ts",
         templateFile: "internals/plop-templates/module/module.ts.hbs",
       },
       {
         type: "add",
-        path: "src/{{moduleName}}.test.ts",
+        path: "src/{{ kebabCase moduleName }}.test.ts",
         templateFile: "internals/plop-templates/module/module.test.ts.hbs",
       },
     ],
