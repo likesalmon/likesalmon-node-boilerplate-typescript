@@ -2,7 +2,7 @@
  * logger
  */
 
-import { createLogger, format, transports } from 'winston';
+import { createLogger, format, transports } from "winston";
 
 const logger = createLogger({
   levels: {
@@ -11,11 +11,11 @@ const logger = createLogger({
     warn: 2,
     info: 3,
   },
-  level: 'info',
+  level: "info",
   exitOnError: true,
   format: format.combine(format.timestamp(), format.splat(), format.json()),
   transports: [
-    new transports.Console({ silent: process.env.NODE_ENV === 'test' }),
+    new transports.Console({ silent: process.env.NODE_ENV === "test" }),
   ],
 });
 

@@ -3,11 +3,11 @@
  * my-module
  *
  */
-import { T } from 'ramda';
-import logger from './utils/logger';
+import { T } from "ramda";
+import logger from "./utils/logger";
 
 const main = (): boolean => {
-  logger.info('This is my-module.', { moduleName: 'my-module' });
+  logger.info("This is my-module.", { moduleName: "my-module" });
   return T();
 };
 
