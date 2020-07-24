@@ -1,16 +1,16 @@
 /**
  *
  *
- * Tests for {{moduleName}}
+ * Tests for index
  *
  *
  */
-import {{moduleName}} from "./{{moduleName}}";
+import main from "./index";
 
-describe("{{moduleName}}", () => {
+describe("main", () => {
   it("should not error", async () => {
     const spy = jest.spyOn(global.console, "error");
-    {{moduleName}}();
+    main();
     expect(spy).not.toHaveBeenCalled();
   });
 });
