@@ -1,16 +1,16 @@
 /**
  *
  *
- * Tests for {{moduleName}}
+ * Tests for {{ kebabCase moduleName }}
  *
  *
  */
-import {{moduleName}} from "./{{moduleName}}";
+import {{ camelCase moduleName }} from "./{{ kebabCase moduleName }}";
 
-describe("{{moduleName}}", () => {
+describe("{{ camelCase moduleName }}", () => {
   it("should not error", async () => {
     const spy = jest.spyOn(global.console, "error");
-    {{moduleName}}();
+    {{ camelCase moduleName }}();
     expect(spy).not.toHaveBeenCalled();
   });
 });

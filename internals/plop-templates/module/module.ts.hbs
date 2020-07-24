@@ -1,14 +1,14 @@
 /**
  *
  *
- * {{moduleName}}
+ * {{ kebabCase moduleName }}
  *
  *
  */
 import logger from "./utils/logger";
 
-const {{moduleName}} = (): void => {
-  logger.info("This is {{moduleName}}.", { moduleName: "{{moduleName}}" });
+const {{ camelCase moduleName }} = (): void => {
+  logger.info("This is {{ camelCase moduleName }}.", { moduleName: "{{ kebabCase moduleName }}" });
 };
 
-export default {{moduleName}};
+export default {{ camelCase moduleName }};
