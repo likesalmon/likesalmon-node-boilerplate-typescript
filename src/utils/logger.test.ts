@@ -1,7 +1,11 @@
 /**
- * logger tests
+ *
+ *
+ * Tests for logger
+ *
+ *
  */
-import logger from "../logger";
+import logger from "./logger";
 
 describe("logger", () => {
   it("should be a logger", async () => {
